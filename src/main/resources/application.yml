@@ -1,0 +1,32 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:~/kakao/pay/cafeservice/h2-console;
+    driver-class-name: org.h2.Driver
+  jpa:
+    database-platform: H2
+    show-sql: true
+    hibernate:
+      ddl-auto: create-drop
+    generate-ddl: true
+    defer-datasource-initialization: true
+  mvc:
+    hiddenmethod:
+      filter:
+        enabled: true
+  sql:
+    init:
+      platform: h2
+      data-locations: classpath:initdata.sql
+server:
+  port: 8080
+
+logging:
+  level:
+    com.kakaopay.cafeservice: DEBUG
+    root: info
+    org:
+      hibernate:
+        type:
+          descriptor:
+            sql: trace
+        SQL: DEBUG

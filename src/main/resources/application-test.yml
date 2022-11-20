@@ -1,0 +1,8 @@
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: update
+    generate-ddl: false
+    defer-datasource-initialization: false
+server:
+  port: 8081

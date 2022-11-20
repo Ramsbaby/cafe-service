@@ -1,0 +1,16 @@
+spring:
+  datasource:
+    hikari:
+      reader:
+        jdbc-url: jdbc:mysql://dev-mysql.ro-test:3306/cafe?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&useSSL=false
+        driverClassName: com.mysql.cj.jdbc.Driver
+        username: test
+        password: test
+      writer:
+        jdbc-url: jdbc:mysql://dev-mysql.test:3306/cafe?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&useSSL=false
+        driverClassName: com.mysql.cj.jdbc.Driver
+        username: test
+        password: test
+
+server:
+  port: 8081
