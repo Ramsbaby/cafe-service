@@ -26,7 +26,7 @@
 ## 실행방법
 * build
 ```cmd
-./gradlew clea build bootJar
+./gradlew clean build bootJar
 ```
 * run(default port:8080)
 ```cmd
